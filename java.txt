@@ -1,0 +1,408 @@
+1]What Is class in Object Oriented Programming Language 
+=>In object-oriented programming 
+ a class is a template definition of the method s and variable s in a particular kind of object .
+ Thus, an object is a specific instance of a class;
+ it contains real values instead of variables.
+ The class is one of the defining ideas of object-oriented programming.
+deas about classes are:
+A class can have subclasses that can inherit all or some of the characteristics of the class. In relation to each subclass, the class becomes the superclass.
+Subclasses can also define their own methods and variables that are not part of their superclass.
+The structure of a class and its subclasses is called the class hierarchy
+
+
+2]What is an Object in Object Oriented Programming Language 
+=>In object-oriented programming (OOP),
+ objects are the things you think about first in designing a program and 
+they are also the units of code that are eventually derived from the process.
+
+3]What Is Difference Between Class And Interface 
+=>Writing an interface is similar to writing a class. But a class describes the attributes and behaviors of an object.
+ And an interface contains behaviors that a class implements
+
+4]What Is Method Overloading in Object Oriented Programming Language
+=>Method overloading is a form of polymorphism in OOP. 
+Polymorphism allows objects or methods to act in different ways,
+ according to the means in which they are used. One such manner in which 
+the methods behave according to their argument types and number of arguments is method overloading
+
+5]What Is Data hiding in Object Oriented Programming Language 
+=>Data hiding is an object-oriented programming (OOP) 
+technique specifically used to hide internal object details (i.e., data members). 
+Data hiding guaranteesexclusive data access to 
+class members only and protects and maintains object integrity by preventing intended or unintended changes and intrusions
+
+6]What are the differences between abstract classes and interfaces
+=>A class that contains an abstract keyword on 
+the declaration is known as an abstract class.
+ It is necessary for an abstract class to have at least one abstract method. 
+It is possible in an abstract class to contain multiple concrete methods.
+
+7]What are the Virtual Function in Object Oriented Programming ?
+=>A virtual function is a member function that you expect to be redefined in derived classes.
+ When you refer to a derived class object using a pointer or a reference to
+ the base class, you can call a virtual function for 
+that object and execute the derived class's version of the function
+
+8]What is Constructor in Object Oriented Programming
+=>In class-based, object-oriented programming, a constructor (abbreviation: ctor) 
+is a special type of subroutine called to create an object.
+ It prepares the new object for use, often accepting arguments that 
+the constructor uses to set required member variables.
+A constructor resembles an instance method,
+ but it differs from a method in that it has no explicit return type,
+ it is not implicitly inherited and it usually has different rules for scope modifiers. Constructors often have the same name as the declaring class. They have the task of initializing the object's data members and of establishing the invariant of the class, failing if the invariant is invalid. A properly written constructor leaves the resulting object in a valid state. Immutable objects must be initialized in a constructor.
+Most languages allow overloading the constructor in that 
+there can be more than one constructor for a class,
+ with differing parameters. Some languages take consideration of some special types of constructors. Constructors, which concretely use a single class to create objects and return a new instance of the class, are abstracted by factories, which also create objects but can do so in various ways, 
+using multiple classes or different allocation schemes such as an object pool.
+
+
+9]What is Abstract class in Object Oriented Programming
+=>Abstract classes and methods are when the parent class has a named method, but need its child class(es) to fill out the tasks.
+An abstract class is a class that contains at least one abstract method.
+ An abstract method is a method that is declared, but not implemented in the code.
+An abstract class or method is defined with the abstract keyword
+When inheriting from an abstract class, the child class method must be defined with the same name, and the same or a less restricted access modifier. So, if the abstract method is defined as protected, the child class method must be defined as either protected or public, but not private. Also, the type and number of required arguments must be the same. However, the child classes may have optional arguments in addition.
+So, when a child class is inherited from an abstract class, 
+we have the following rules:
+1] The child class method must be defined with the same name and it redeclares the parent abstract method
+2] The child class method must be defined with the same or a less restricted access modifier
+The number of required arguments must be the same. However, the child class may have optional arguments in addition
+
+10]What is Final Keyword in Object Oriented Programming
+=>The final keyword is a non-access modifier used for classes,
+ attributes and methods, which makes them non-changeable (impossible to inherit or override). 
+The final keyword is useful when you want a variable to always store the same value,
+ The final keyword is called a modifier
+
+11]What is Pure Virtual funtion in Object Oriented Programming
+=>A pure virtual function or pure virtual method is a virtual function 
+that is required to be implemented by a derived class
+ if the derived class is not abstract.
+ Classes containing pure virtual methods are termed "abstract" and they cannot be instantiated directly.
+
+12]What are Sealed Modifier in Object Oriented Programming
+=>When applied to a class, the sealed modifier prevents other classes
+ from inheriting from it. In the following example, class B inherits from class A , but no class can inherit from class B . You can also use the sealed modifier on a method or property
+ that overrides a virtual method or property in a base class.
+
+13]What is Dynamic or run time Polymorphism in oops 
+=>n real-time, polymorphism can be explained as
+ the different roles played by a single person.
+ For instance, a man can be a son, husband, father,
+ etc. In other words, a person has many features and implements each
+ one of them according to the situation.
+
+14]What is Access Modifier in Object Oriented Programming ?
+=>Access Modifiers (Access Specifiers) are keywords that are used in OOP (object-oriented programming) 
+in order to specify the accessibility of the methods,
+ classes, constructors, and other members of the class. 
+Access Modifier is not a concept but rather keywords that are used in programs. 
+Polymorphism is one of the key aspects of Object-Oriented Programming (OOP).
+ Languages incapable of supporting Object-Oriented programming do not come under Object-oriented languages.
+
+15]What is Friend Function in Object Oriented Programming
+=>In object-oriented programming, a friend function, 
+that is a "friend" of a given class, is a function 
+that is given the same access as methods to private and protected data.
+ A friend function is declared by the class that is granting access, 
+so friend functions are part of the class interface, like methods.
+
+16]What is Overriding in Object Oriented Programming
+=>Method overriding, in object-oriented programming, is a language feature that allows a subclass or child class
+ to provide a specific implementation of a method
+ that is already provided by one of its superclasses or parent classes.
+
+17]What is the role of mutable storage class specifier
+=>The mutable storage class specifier is used only on a class data member to make it modifiable even though 
+the member is part of an object declared as const . You cannot use 
+the mutable specifier with names declared as static or const , or reference members.
+
+18]Distinguish between shallow copy and deep copy
+               ====shallowcopy== 
+=>A bitwise copy of an object, where a new object is created and it has the same copy of the values in the original object, is called a Shallow copy. If any of the object fields refer to the other object
+ then in such cases only the reference address is copied.  
+                ===deepcopy====
+When the process of copying occurs repetitively and a copy of 
+the object is always copied in another object, 
+then it is called deep copy. In this process, initially, a new collection of the object is constructed, and then the copies of
+ the child object frequently populate those found in the original.
+
+19]what is a Refrence variable in Object oriented Programming Language 
+=>A reference variable is a variable that points to an object of a given class, letting you access the value of an object. 
+An object is a compound data structure that holds values that you can manipulate.
+ A reference variable does not store its own values.
+
+20]What is a Copy Constructor 
+=>A copy constructor is a member function that initializes an object using another object of the same class. In simple terms, 
+a constructor which creates an object by initializing it with an object of the same class,
+ which has been created previously is known as a copy constructor. 
+
+21]What is this Pointer in Object oriented Programming Language 
+=>The this pointer is a pointer accessible only within 
+the nonstatic member functions of a class , struct , or union type. 
+It points to the object for which the member function is called.
+ Static member functions don't have a this pointer.
+====================================================================================================
+
+
+1]Define Constructor and Destructor
+=>Constructor and Destructor are the special member functions of the class
+ which are created by the C++ compiler or can be defined by the user.
+ Constructor is used to initialize the object of 
+the class while destructor is called by the compiler when the object is destroyed.
+
+
+2]How to Load Classes in Object Oriented Programming
+=>The class object associated with the class with the given string name can be returned with the method java.lang.Class.forName(String name, boolean initialize, ClassLoader loader), using the class loader that is used to load the class.
+The parameters in the forName() method are name, initialize and loader.
+ If the value of the parameter loader is null, 
+then the class is loaded using the bootstrap class loader. Also, if the initialize parameter is true, then only
+ the class is initialized if it has not been initialized earlier.
+
+3]How to Call Parent Constructor 
+=>In order to run a parent constructor, 
+a call to parent::__construct() within the child constructor is required. 
+If the child does not define a constructor then it may be inherited from 
+the parent class just like a normal class method 
+(if it was not declared as private). $obj = new OtherSubClass();
+
+4]Are Parent Constructor Called Implicitly When Create An Object Of Class
+=>Parent constructors are not called implicitly if the child class 
+defines a constructor. In order to run a parent constructor,
+ a call to parent::__construct() within the child constructor is required.
+
+5]What Happen, If Constructor Is Defined As Private Or Protected
+=>A private constructor in Java is used in restricting object creation. 
+It is a special instance constructor used in static member-only classes. 
+If a constructor is declared as private, then its objects are only accessible from within the declared class.
+ You cannot access its objects from outside the constructor class.
+
+6]Define New-style Constructor & Old-style Constructor. 
+Check which One Will Be Called
+=>The difference is that the old object used a method with the same name of the class as a constructor,
+ the new object uses a "magic" method called __construct().... but old really is old now,
+ has been deprecated for nearly 10 years and is now completely replaced by the new method   
+
+7]Create Abstract class and method
+=>An abstract class is a class that is declared abstract —it may or may not include abstract methods. Abstract classes cannot be instantiated, but they can be subclassed. When an abstract class is subclassed,
+ the subclass usually provides implementations for all of the abstract methods in its parent class.
+
+8]Define 3 types of visibility of data member & member function.
+=>Public - Can be accessed from everywhere.
+ Private - Can only be accessed within the class.
+ Protected - Can be accessed by the class declared it and by the classes that inherit the above declared class.
+
+9]Create a method which will never inherited 
+=>Inheritance in OOP = When a class derives from another class.
+The child class will inherit all the public and protected
+ properties and methods from the parent class. In addition,
+ it can have its own properties and methods.
+An inherited class is defined by using the extends keyword.
+
+
+10]What is the difference between Abstract class and Interface
+=>Abstract class and interface both are used to achieve abstraction where we can declare the abstract methods.
+ Abstract class and interface both can't be instantiated.
+
+11]Create parent class for car and child class for car_model and use car 
+functionality in car_model class ?.
+=>Let us create a class vehicle where we declare and define common properties and methods.
+ Here, vehicle is a super-class.We create a child class for example  Car,  class which extends the above class Vehicle.
+ Here all these classes use specific properties.
+ You can observe these specific properties in blow statement.We create a class called Demo for creating an object of Bike class and initialize the variable with string “short”.We can access the methods from super-class in the sub-class as if they are in the same class. e.g We create an object of bike class,
+ which access the engine property of vehicle class.
+
+
+
+12]Override the parent’s properties and methods in the child class 
+=>In the same way that the child class can have its own properties and methods, it can override 
+the properties and methods of the parent class. When we override the class's properties and methods, we rewrite a method or property that exists in the parent again in the child, but assign to it a different value or code.
+
+13]Prevent the child class from overriding the parent’s methods
+=>How to prevent the child class from overriding the parent's methods
+ In order to prevent the method in the child class from overriding
+ the parent's methods, we can prefix the method in the parent with the final keyword.
+
+15]Declare classes and methods as abstract 
+=>To create an abstract class, just use the abstract keyword 
+before the class keyword, in the class declaration. 
+You can observe that except abstract methods the Employee class is same as normal class in Java.
+ The class is now abstract, but it still has three fields, seven methods, and one constructor.
+
+16]Can we have non abstract methods inside an abstract class? Explain With 
+Example ?
+=>Yes, we can declare an abstract class with no abstract methods in Java.
+ An abstract class means that hiding the implementation and showing
+ the function definition to the user. An abstract class having both abstract methods and non-abstract methods.
+ For an abstract class, we are not able to create an object directly.
+
+17]How to create child classes from an abstract class
+=>How to create child classes from an abstract class
+Since we cannot create objects from abstract classes
+ we need to create child classes that inherit the abstract class code.
+ Child classes of abstract classes are formed with the help of the extends keyword, like any other child class.
+
+18]What are Magic Methods/Functions? List them in OOPS 
+=>The following method names are considered magical
+ __construct(), __destruct(), __call(), __callStatic(),
+ __get(), __set(), __isset(), __unset(), __sleep(), __wakeup(), __serialize(), __unserialize(), __toString(), __invoke(), __set_state(), __clone(), and __debugInfo().
+
+19]How can we used Virtual Fuction write an examples in oops 
+=>For example, a base class Animal could have a virtual function Eat.
+ Subclass Llama would implement Eat differently than subclass Wolf,
+ but one can invoke Eat on any class instance referred to as Animal, and get the Eat behavior of the specific subclass.This allows a programmer to process a list of objects of class Animal, telling each in turn to eat (by calling Eat), without needing to know what kind of animal may be in the list,
+ how each animal eats, or what the complete set of possible animal types might be
+
+
+
+20]How can we Used various type of Constructor write an Examples in oops 
+=>A constructor is a special type of function with no return type.
+ Name of constructor should be same as the name of the class.
+ We define a method inside the class and constructor is also defined inside a class.
+ A constructor is called automatically when we create an object of a class. 
+We can’t call a constructor explicitly. Let us see the types of constructor.
+
+Constructor Types 
+Default Constructor
+Parameterized Constructor
+Copy Constructor
+Static Constructor
+Private Constructor
+
+21]Which Constructor have no Parameter write an Examples in oops
+=>Which constructors have no parameters A constructor that takes no parameters is called a parameterless constructor.
+ Parameterless constructors are invoked whenever an object is instantiated by using the new operator and no arguments are provided to new 
+ For more information, see Instance Constructors.
+
+
+22]How to Secured Internal Data using Encapsulation Write a Example in oops
+=>
+Data securing in Java is securing  the variables of a class from other classes.
+ It can only be accessed through the method of their current class.
+ It hides the implementation details from the users. But more than data hiding, 
+it is meant for better management or grouping of related data.
+To achieve a lesser degree of encapsulation in Java, you can use modifiers like “protected” or “public”. With encapsulation, developers can change one part of the code easily without affecting other.
+===================================================================================
+1]Write a Programme to create a Class in OOPS 
+=>Java is an object-oriented programming language.
+Everything in Java is associated with classes and objects, 
+along with its attributes and methods. For example: in real life, a car is an object. The car has attributes, such as weight and color, and methods, such as drive and brake.
+A Class is like an object constructor, or a "blueprint" for creating objects.
+
+
+2]Write a Programme to Create a Object in OOPS
+=>In object-oriented programming, a class is a blueprint for creating objects (a particular data structure),
+ providing initial values for state (member variables or attributes),
+ and implementations of behavior (member functions or methods). 
+The user-defined objects are created using the class keyword.
+
+3]Write a Programme to Create an Abstract Class In OOPS
+=>abstract class Bike{  
+  abstract void run();  
+}  
+class Honda4 extends Bike{  
+void run(){System.out.println("running safely");}  
+public static void main(String args[]){  
+ Bike obj = new Honda4();  
+ obj.run();  
+}  
+}
+
+4]Write a Programme to Create a Encapsulation in OOPS
+=>//A Java class which is a fully encapsulated class.  
+//It has a private data member and getter and setter methods.  
+package com.javatpoint;  
+public class Student{  
+//private data member  
+private String name;  
+//getter method for name  
+public String getName(){  
+return name;  
+}  
+//setter method for name  
+public void setName(String name){  
+this.name=name  
+}  
+}
+
+5] How to Implement Access Modifier Write a Proggramme in OOPS 
+=>In Java, access modifiers are used to set the accessibility (visibility) of classes, interfaces, variables, methods, constructors, data members, and the setter methods. For example,
+
+class Animal {
+    public void method1() {...}
+
+   private void method2() {...}
+}
+In the above example, we have declared 2 methods: method1() and method2(). Here,
+
+method1 is public - This means it can be accessed by other classes.
+method2 is private - This means it can not be accessed by other classes.
+Note the keyword public and private. These are access modifiers in Java. They are also known as visibility modifiers.
+
+
+6]Write a Proggramme of Copy Constructor in OOPS
+=>lass Demo { private: int num1, num2;
+ public: Demo(int n1, int n2) 
+{
+ num1 = n1; num2 = n2;
+ }
+ Demo(const Demo &n) 
+{ 
+num1 = n. num1; num2 = n. num2; 
+}
+ void display()
+ { 
+cout<<"num1 = "<< num1 <<endl; cout<<"num2 = "<< num2 <<endl; 
+}
+ };
+
+7]Declare and implement an interface and implement more than one 
+interface in the same class.
+=>To declare a class that implements an interface, you include an implements clause in the class declaration.
+ Your class can implement more than one interface, 
+so the implements keyword is followed by a comma-separated list of the interfaces implemented by the class.
+
+8]How to implement the polymorphism principle in OOPS 
+=>In order to implement the polymorphism principle, we can choose between abstract classes and interfaces. In order to ensure that the classes do implement the polymorphism principle, 
+we can choose between one of the two options of either abstract classes or interfaces.
+
+9]Explain Scope resolution operator with example in OOPS
+=>The Scope Resolution Operator (also called Paamayim Nekudotayim) or
+ in simpler terms, the double colon, is a token that allows access to static, constant, and overridden properties or methods of a class.
+ When referencing these items from outside the class definition, use the name of the class.
+
+10]How to Access child class property to Parent class write an Programme in 
+OOPS 
+=>Use the super keyword to access parent class methodIn other words,
+ the super keyword is used if the method is overridden. You override a method in the parent class by calling
+ the same method in the child class.
+ This process is known as method overriding
+
+11]Write a Programme of how to define Interface In OOPS 
+=>What is program to interfaces OOP?
+Interfaces in Object Oriented Programming Languages.
+ An interface is a programming structure/syntax that allows
+ the computer to enforce certain properties on an object (class).
+ For example, say we have a car class and a scooter class and a truck class.
+ Each of these three classes should have a start_engine() action.
+
+12] Write a Programme of how to define a Constructor in OOPS ?
+=>How do you define a constructor?
+Image result for Write a Programme of how to define a Constructor in OOPS
+What Does Constructor Mean? A constructor is a special method of a class or structure in object-oriented programming
+ that initializes a newly created object of that type.
+ Whenever an object is created, the constructor is called automatically.
+
+
+
+13] How to define a default constructor write a Programme in OOPS
+=>A constructor without any arguments or with the default value for every argument is said to be the Default constructor. 
+What is the significance of the default constructor? 
+They are used to create objects, which do not have any specific initial value. 
+Is a default constructor automatically provided
+If no constructors are explicitly declared in the class, a default constructor is provided automatically by the compiler. 
+Can a default constructor contain a default argument
+Yes, a constructor can contain default argument with default values for an object.
+Will there be any code inserted by the compiler to the user implemented default constructor behind the scenes
+
