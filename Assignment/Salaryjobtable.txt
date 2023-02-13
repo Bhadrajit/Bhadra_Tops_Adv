@@ -1,0 +1,17 @@
+SELECT dept_id, MIN(salary) as min_sal_for_dept
+FROM employee
+GROUP BY dept_id
+
+
+SELECT * 
+FROM
+(
+  SELECT dept_id, MIN(salary) as sal
+  FROM employee
+  GROUP BY dept_id
+) dep_min_sals
+INNER JOIN
+employee e
+ON
+  e.dept_id = dep_min_sals.dept_id AND e.salary = dep_min_sals.s
+

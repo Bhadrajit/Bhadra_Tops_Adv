@@ -1,0 +1,17 @@
+SELECT e.ename, e.empno, m.ename as manager, e.mgr
+FROM
+    emp e, emp m
+WHERE e.mgr = m.empno
+
+
+SELECT e.ename, e.empno, m.ename as manager, e.mgr
+FROM
+    emp e, emp m
+WHERE e.mgr = m.empno(+)
+
+
+SELECT e.ename, e.empno, m.ename as manager, e.mgr
+FROM
+    emp e
+    LEFT OUTER JOIN emp m
+        ON e.mgr = m.empno

@@ -1,0 +1,5 @@
+select e.*
+from employee e
+inner join (select dept, max(salary) ms from employee group by dept) m
+  on e.dept = m.dept and e.salary = m.ms
+

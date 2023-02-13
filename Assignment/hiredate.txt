@@ -1,0 +1,8 @@
+select hiredate 
+from emp 
+where hiredate < ( select max(hiredate) 
+                   from emp 
+                   where mgr= (select e.empno 
+                               from emp e 
+                                where e.ename='KING')); 
+

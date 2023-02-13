@@ -1,0 +1,6 @@
+select e.empno, e.ename, d.deptno, d.dname  
+  from emp e
+  left outer join ( select deptno, dname 
+                      from dept 
+                     where deptno = 20 )
+    on e.deptno = d.deptno
