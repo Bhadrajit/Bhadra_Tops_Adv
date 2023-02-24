@@ -1,7 +1,0 @@
-FROM `conversations` AS c 
-JOIN      (
-              SELECT    MAX(cm_id) max_id, conversation_id 
-              FROM      conversation_messages 
-              GROUP BY  conversation_id
-          ) cm_last ON (cm_last.conversation_id = c.conversation_id)
-JOIN      conversation_messages cm ON (cm.cm_id = cm_last.max_id)
