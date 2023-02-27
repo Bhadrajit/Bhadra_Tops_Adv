@@ -1,0 +1,5 @@
+SELECT *
+FROM employees w,
+     employees m
+WHERE w.manager_id = m.emp_id
+  AND w.hire_date < m.hire_date>;

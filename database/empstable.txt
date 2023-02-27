@@ -1,0 +1,3 @@
+SELECT id, name, designation, salary 
+FROM   EMP 
+WHERE  id IN (2,4,6);

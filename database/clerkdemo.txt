@@ -1,0 +1,3 @@
+SELECT *
+FROM employees
+WHERE job_name IN ('CLERK','MANAGER');

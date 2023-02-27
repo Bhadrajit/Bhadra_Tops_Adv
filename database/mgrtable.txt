@@ -1,0 +1,9 @@
+CREATE TABLE emp 
+  (EMPNO INTEGER,
+  ENAME varchar(20),
+  JOB varchar(20),
+  MGR int,
+  HIREDATE datetime, 
+  SAL int, 
+  COMM int,
+  DEPTNO int);

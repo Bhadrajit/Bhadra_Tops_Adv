@@ -1,0 +1,7 @@
+SELECT distinct d.depNO,d.DNAME,e2.EMPNO,e2.ENAME
+FROM EMP e
+INNER JOIN dept d
+ON(e.depno = d.depno)
+INNER JOIN EMP e2
+ON e2.EMPNO = e.mgr
+where d.depNO in(10,20,30)

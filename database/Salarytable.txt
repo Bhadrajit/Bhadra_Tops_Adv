@@ -1,0 +1,11 @@
+DROP TABLE Emp_log;
+CREATE TABLE Emp_log
+  (Emp_id NUMBER,
+  Log_date DATE,
+  New_salary NUMBER,
+  Action     VARCHAR2(20));
+Update EMPLOYEES.SALARY:
+UPDATE employees
+SET salary = salary + 1000.0
+WHERE Department_id = 20;
+ 

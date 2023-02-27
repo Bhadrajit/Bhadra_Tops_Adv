@@ -1,0 +1,4 @@
+SELECT *
+FROM employees
+WHERE hire_date < '1989-11-21'>;
+
