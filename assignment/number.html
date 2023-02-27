@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="formValidation.jsp" method="post">
+		First Name: <input type="text" name="firstName" /> <br />
+		Last Name: <input type="text" name="lastName" /> <br />
+		Mobile: <input type="text" name="mobile" /> <br />
+		Email: <input type="text" name="email" /> <br />
+		<input type="submit" value="Submit" />
+	</form>
+		</form>
+	
+	<%
+		String firstName = request.getParameter("firstName");
+		String lastName = request.getParameter("lastName");
+		String mobile = request.getParameter("mobile");
+		String email = request.getParameter("email");
+		
+		boolean isValid = true;
+		
+		// Validate First Name
+		if(firstName == null || firstName.trim().length() == 0 || !firstName.matches("<a-zA-Z>+")) {
+			out.println("First Name is not valid<br />");
+			isValid = false;
+		}
+		
+		// Validate Last Name
+		if(lastName == null || lastName.trim().length() == 0 || !lastName.matches("<a-zA-Z>+")) {
+			out.println("Last Name is not valid<br />");
+			isValid = false;
+		}
+		
+		// Validate Mobile
+		if(mobile == null || mobile.trim().length() == 0 || !mobile.matches("<0-9>{10}")) {
+			out.println("Mobile is not valid<br />");
+			isValid = false;
+		}
+		
+		// Validate Email
+		if(email == null || email.trim().length() == 0 || !email.matches("^<\\w-\\.+>*<\\w-\\.>\\@(<\\w>+\\.)+<\\w>+<\\w>$")) {
+			out.println("Email is not valid<br />");
+			isValid = false;
+		}
+		
+		if(isValid) {
+			out.println("Form is valid");
+</body>
+</html>

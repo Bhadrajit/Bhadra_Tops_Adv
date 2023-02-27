@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+String firstName = request.getParameter("firstName");
+String lastName = request.getParameter("lastName");
+String email = request.getParameter("email");
+String mobile = request.getParameter("mobile");
+String password = request.getParameter("password");
+String gender = request.getParameter("gender");
+
+Configuration cfg = new Configuration();
+cfg.configure("hibernate.cfg.xml");
+
+User user = new User();
+user.setFirstName(firstName);
+user.setLastName(lastName);
+user.setEmail(email);
+user.setMobile(mobile);
+user.setPassword(password);
+user.setGender(gender);
+
+session.save(user);
+tx.commit();
+session.close();
+</body>
+</html>
