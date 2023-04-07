@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	</beans>
+	<bean class="com.framework.Student" name="stud">
+   
+       <property name="studentName">
+               <value> </value> 
+       <property/>
+  <property name="studentCourse">
+               <value> Spring Framework </value> 
+          <property/>
+  
+    </bean>
+     <bean id="person" class="com.framweork.person">
+        <property name="person">
+            <bean class="com.Framweork.Person">
+                <constructor-arg value="Jane Doe"/>
+                <constructor-arg>
+                    <bean class="com.framweork.Address">
+                        <constructor-arg value="456 2nd St"/>
+                    </bean>
+                     </bean>
+                </constructor-arg>
+            </bean>
+        </property>
+    
+	</beans>
+	<bean id="studentdemo" class="com.Framweork.Studentdemo">
+        <property name="id" value="1"/>
+        <property name="fname" value="gohil"/>
+        <property name="lname" value="rgerg"/>
+        <property name="email" value="fgdhgr"/>
+        <property name="mobile" value="1223456"/>
+    </bean>
+    </bean>
+    <bean id="message" class="Message">
+        <constructor-arg value="Hello, world!"/>
+    </bean>
+    
+    <bean id="messageP" class="MessageP">
+        <constructor-arg ref="messageService"/>
+    </bean>
+    </bean>
+    <bean id="user" class="com.framweork">
+        <constructor-arg>
+            <bean class="com.framweork">
+                <constructor-arg ref="dataSource"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+    
+     <bean id="user" class="org.framework.commons.dbcp2.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/mydatabase"/>
+        <property name="username" value="myuser"/>
+        <property name="password" value="mypassword"/>
+    </bean>
+</beans>
+
+  
